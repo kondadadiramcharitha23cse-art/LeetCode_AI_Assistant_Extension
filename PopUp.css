@@ -1,0 +1,36 @@
+body{
+    width:350px;
+    padding:10px;
+    font-family:Arial;
+}
+
+#chat{
+    height:300px;
+    overflow-y:auto;
+    border:1px solid #ccc;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+.message{
+    margin-bottom:10px;
+}
+
+.user{
+    font-weight:bold;
+}
+
+.ai{
+    color:green;
+}
+
+input{
+    width:100%;
+    padding:8px;
+    margin-bottom:10px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+}
