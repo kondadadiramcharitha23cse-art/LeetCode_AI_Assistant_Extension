@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+
+  "name": "LeetCode AI Hint Helper",
+
+  "version": "1.0",
+
+  "description": "AI hints for LeetCode problems",
+
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "https://openrouter.ai/*"
+  ],
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://leetcode.com/*"
+      ],
+
+      "js": [
+        "content.js"
+      ],
+
+      "run_at": "document_idle"
+    }
+  ]
+}
